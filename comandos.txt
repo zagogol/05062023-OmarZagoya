@@ -1,0 +1,83 @@
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya
+$ git init
+Initialized empty Git repository in C:/Users/admin/Desktop/DH/introinformatica/05062023-OmarZagoya/.git/
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (master)
+$ git branch -M main
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git remote add origin https://github.com/zagogol/05062023-OmarZagoya.git
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ touch comandos.txt main.js index.html
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git add .
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git commit -m "commit 01 de OmarZagoya"
+[main (root-commit) 5fcadbf] commit 01 de OmarZagoya
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 246 bytes | 18.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/zagogol/05062023-OmarZagoya.git
+ * [new branch]      main -> main
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git branch feature
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ mkdir Hardware Software SeguridadInformatica
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ touch Hardware/resumen.txt Software/resumen.txt SeguridadInformatica/resumen.txt
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ git add .
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ git commit -m "commit 02 de OmarZagoya"
+[feature 3568a22] commit 02 de OmarZagoya
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 127.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/zagogol/05062023-OmarZagoya/pull/new/feature
+remote:
+To https://github.com/zagogol/05062023-OmarZagoya.git
+ * [new branch]      feature -> feature
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (feature)
+$ git checkout main
+Switched to branch 'main'
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ mv main.js resumenHardware.txt
+
+admin@DESKTOP-NQ68HDT MINGW64 ~/Desktop/DH/introinformatica/05062023-OmarZagoya (main)
+$ mv index.html resumenSoftware.txt

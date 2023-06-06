@@ -1,0 +1,3 @@
+Caché L1, L2, L3
+RAM
+Registros
